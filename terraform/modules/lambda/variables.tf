@@ -22,11 +22,17 @@ variable "runtime_env" {
   default     = "python3.12"
 }
 
-# variable "filename" {
-#   type        = string
-#   description = "Name of the .zip file"
-#   default     = "restapp.zip"
-# }
+variable "bucket_name" {
+  type        = string
+  description = "Name of the S3 Bucket storing application"
+  default     = "iaclambda"
+}
+
+variable "s3_key" {
+  type        = string
+  description = "Name of the .zip file"
+  default     = "restapp.zip"
+}
 
 variable "handler" {
   type        = string
