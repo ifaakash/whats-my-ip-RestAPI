@@ -31,13 +31,13 @@ variable "bucket_name" {
 variable "s3_key" {
   type        = string
   description = "Name of the .zip file"
-  default     = "restapp.zip"
+  default     = "app.zip"
 }
 
 variable "handler" {
   type        = string
   description = "Handler function in the python file"
-  default     = "restapp.lambda_handler"
+  default     = "app.lambda_handler"
 }
 
 variable "lambda_exec_role_arn" {

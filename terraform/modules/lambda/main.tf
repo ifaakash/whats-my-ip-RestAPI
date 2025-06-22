@@ -7,5 +7,6 @@ resource "aws_lambda_function" "lambda" {
   package_type  = var.package_type
   handler       = var.handler # <python_file_name.lambda_function_name>
   runtime       = var.runtime_env
+  publish       = true
   tags          = var.tags
 }
