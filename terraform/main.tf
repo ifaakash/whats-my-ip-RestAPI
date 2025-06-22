@@ -11,5 +11,6 @@ module "lambda" {
 
 # API Gateway Configuration
 module "api" {
-  source = "./modules/api"
+  source            = "./modules/api"
+  lambda_invoke_arn = module.lambda.lambda_invoke_arn
 }
