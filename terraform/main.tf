@@ -2,3 +2,9 @@
 module "iam" {
   source = "./modules/iam"
 }
+
+# Lambda Configuration
+module "lambda" {
+  source               = "./modules/lambda"
+  lambda_exec_role_arn = module.iam.lambda_exec_role_arn
+}
