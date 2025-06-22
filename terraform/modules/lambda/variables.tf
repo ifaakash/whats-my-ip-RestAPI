@@ -22,11 +22,11 @@ variable "runtime_env" {
   default     = "python3.12"
 }
 
-# variable "filename" {
-#   type        = string
-#   description = "Name of the .zip file"
-#   default     = "restapp.zip"
-# }
+variable "s3_key" {
+  type        = string
+  description = "Name of the .zip file"
+  default     = "restapp.zip"
+}
 
 variable "handler" {
   type        = string
